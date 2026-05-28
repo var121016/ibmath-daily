@@ -1,0 +1,25 @@
+/* ── Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=IM+Fell+English:ital@0;1&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* ── KaTeX ── */
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css');
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #EDE8E0;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  transition: opacity 0.15s;
+}
+
+button:active {
+  opacity: 0.75;
+}
