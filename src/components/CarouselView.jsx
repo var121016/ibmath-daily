@@ -97,7 +97,7 @@ export default function CarouselView({ day, startIndex, onBack }) {
           onTouchMove={handleMove}
           onTouchEnd={handleUp}
           style={{
-            width: "100%", aspectRatio: "1 / 1",
+            width: "100%", aspectRatio: "4 / 5",
             borderRadius: 12, overflow: "hidden",
             cursor: "grab", userSelect: "none",
             boxShadow: "0 2px 16px rgba(80,50,20,0.10)",

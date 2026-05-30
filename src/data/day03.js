@@ -119,14 +119,15 @@ const day03 = {
     },
     {
       num: 10, tier: "TIER 4", label: "Paper 3 Investigation",
-      questionText: "AM-GM Inequality. Let a and b be positive real numbers. Consider: (âˆša âˆ’ âˆšb)Â² â‰¥ 0",
+      questionText: "AM-GM Inequality. Let a and b be positive real numbers.",
+      latex: "(\\sqrt{a} - \\sqrt{b})^2 \\geq 0",
       multiPart: [
-        { label: "(a)", text: "Expand the left-hand side." },
-        { label: "(b)", text: "Rearrange to show: (a+b)/2 â‰¥ âˆš(ab)." },
-        { label: "(c)", text: "When does equality hold?" },
-        { label: "(d)", text: "Use AM-GM to find the minimum value of x + 4/x for positive x." },
+        { label: "(a)", text: "Expand the left-hand side of the inequality." },
+        { label: "(b)", text: "Rearrange to show: \\(\\dfrac{a+b}{2} \\geq \\sqrt{ab}\\)" },
+        { label: "(c)", text: "When does equality hold, i.e. when does \\(\\dfrac{a+b}{2} = \\sqrt{ab}\\)?" },
+        { label: "(d)", text: "Use AM-GM to find the minimum value of \\(x + \\dfrac{4}{x}\\) for positive x." },
       ],
-      hint: "For (d): let a = x and b = 4/x, then apply the AM-GM result from (b).",
+      hint: "For (d): let a = x and b = 4/x, then apply the result from (b).",
       answerLatex: "\\text{Min value of }x+\\dfrac{4}{x}=4\\text{ at }x=2",
       workingLatex:
         "(a)\\;a-2\\sqrt{ab}+b\\geq0\\\\[4pt]" +

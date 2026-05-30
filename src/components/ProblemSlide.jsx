@@ -99,7 +99,7 @@ export default function ProblemSlide({
 
       {/* ── Question — scrollable if long (e.g. multi-part Q10) ── */}
       <div style={{
-        flexShrink: 1, overflowY: "auto", maxHeight: "180px",
+        flexShrink: 1, overflowY: "auto", maxHeight: "220px",
       }}>
         {s.questionText && (
           <div style={{
@@ -153,8 +153,9 @@ export default function ProblemSlide({
         padding: "6px 10px",
         background: P.pageBg,
         borderLeft: `3px solid ${ACCENT}`,
-        borderRadius: "0 4px 4px 0",
-        marginBottom: 6,
+        marginbottom: 6,
+        overflowY: "auto",
+        maxHeight: "80px",
       }}>
         <div style={{
           fontFamily: "'Crimson Text', serif",
@@ -166,8 +167,9 @@ export default function ProblemSlide({
         <div style={{
           fontFamily: "'Spectral', serif",
           fontSize: 11, color: P.textSecond,
+          lineHeight: 1.6,
         }}>
-          <KTex tex={s.hint} />
+          {s.hint}
         </div>
       </div>
 
