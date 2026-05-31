@@ -12,11 +12,11 @@
 // ─────────────────────────────────────────────────────────────
 
 import { DAYS } from "../data/index";
-import { P, ACCENT, BRAND } from "./tokens";
+import { P, ACCENT, BRAND, TIER } from "./tokens";
 
-const TOTAL_DAYS = 7;
+const TOTAL_DAYS = 5;
 
-export default function HomeScreen({ onSelectDay }) {
+export default function HomeScreen({ onSelectDay, onViewBlueprint }) {
   const lockedDays = Array.from(
     { length: TOTAL_DAYS - DAYS.length },
     (_, i) => DAYS.length + i + 1
@@ -109,6 +109,36 @@ export default function HomeScreen({ onSelectDay }) {
             </div>
           ))}
         </div>
+        {/* Week 1 Blueprint button */}
+<button
+  onClick={onViewBlueprint}
+  style={{
+    width: "100%", padding: "16px 20px",
+    background: P.cardBg,
+    border: `1px solid ${ACCENT}`,
+    borderRadius: 10, cursor: "pointer",
+    textAlign: "left", display: "flex",
+    alignItems: "center", gap: 16,
+    marginTop: 8,
+    boxShadow: "0 1px 4px rgba(196,75,16,0.15)",
+  }}
+>
+  <div style={{
+    width: 44, height: 44, borderRadius: 8,
+    background: ACCENT, display: "flex",
+    alignItems: "center", justifyContent: "center",
+    flexShrink: 0, fontSize: 20,
+  }}>📋</div>
+  <div style={{ flex: 1 }}>
+    <div style={{ fontFamily: "'IM Fell English', serif", fontSize: 15, color: ACCENT, marginBottom: 3 }}>
+      Week 1 Blueprint
+    </div>
+    <div style={{ fontFamily: "'Crimson Text', serif", fontSize: 12, color: P.textMuted, fontStyle: "italic" }}>
+      Student mastery review · Parent briefing
+    </div>
+  </div>
+  <div style={{ fontFamily: "'Crimson Text', serif", fontSize: 18, color: ACCENT }}>→</div>
+</button>
       </div>
     </div>
   );
