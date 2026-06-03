@@ -6,6 +6,7 @@ import day05 from "./day05";
 import day06 from "./day06";
 import day07 from "./day07";
 import day08 from "./day08";
+import day09 from "./day09";
 
 // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // To add a new day:
@@ -14,7 +15,7 @@ import day08 from "./day08";
 //   3. Add day04 to the DAYS array below
 //   That's it. Nothing else needs to change.
 // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”—                                   
-export const DAYS = [day01, day02, day03, day04, day05, day06,day07, day08];
+export const DAYS = [day01, day02, day03, day04, day05, day06,day07, day08, day09];
 
 
 
